@@ -1,6 +1,6 @@
 ﻿#=====================================================
 #
-#NAME: Exercice 1-2.ps1
+#NAME: Exercice 1-4.ps1
 #AUTHOR: Oeillard Alexandre
 #DATE:13/03/2024
 #
