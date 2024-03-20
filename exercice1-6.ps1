@@ -14,7 +14,9 @@ function InfoProcessus($pro)
 Write-Host "Affichage de l'Id, ProcessName et Description des processus contenant: $pro"
 $processus = Get-Process | Where-Object {$_.ProcessName -like "*$pro*"}
 $processus | Format-Table Id, Name, Description
+$processus | Out-File -FilePath C:\Users\Administrateur.LOCAL\contextecubsituation8\Sauvegarde.txt
+$processus | Out-File -FilePath C:\Users\Administrateur.LOCAL\contextecubsituation8\Sauvegarde.csv
 }
+
 $pro=Read-Host "Quel processus désirez vous filtrer?" 
 InfoProcessus($pro)
-Get-Process | Out-File -FilePath C:\Users\Administrateur.LOCAL\contextecubsituation8\Sauvegarde.txt
